@@ -1,0 +1,617 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Lato';
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-90 {
+  width: 90%
+}
+
+
+.roboto {
+  font-family: 'Roboto' !important;
+}
+
+/* ---- */
+h1 {
+  font-size: 64px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+/* ----------- */
+.fs-40 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* ---- */
+
+.fs-33 {
+  font-size: 33px;
+  font-weight: 500;
+}
+
+.fs-26 {
+  font-size: 26px;
+}
+
+/* ------- */
+.fs-25 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+/* ------- */
+.fs-24 {
+  font-size: 24px;
+  font-weight: 500px;
+}
+
+/* ----- */
+.fs-22 {
+  font-size: 22px;
+}
+
+/* ------------------------------------- */
+.fs-18 {
+  font-size: 18px;
+}
+
+/* ------ */
+.fs-17 {
+  font-size: 17px;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 53px;
+    font-weight: 800;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .fs-40 {
+    font-size: 35px;
+  }
+
+  .fs-33 {
+    font-size: 27px;
+    font-weight: 500;
+  }
+
+  .fs-26 {
+    font-size: 22px;
+  }
+
+  .fs-24 {
+    font-size: 19px;
+    font-weight: 500px;
+  }
+
+  .fs-22 {
+    font-size: 20px;
+  }
+
+  .fs-17 {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 42px;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .w-80 {
+    width: 90%;
+  }
+
+  .w-90 {
+    width: 90%
+  }
+
+  .fs-18 {
+    font-size: 18px;
+  }
+
+  .fs-40 {
+    font-size: 30px;
+  }
+
+  .fs-33 {
+    font-size: 21px;
+    font-weight: 500;
+  }
+
+  .fs-26 {
+    font-size: 18px;
+  }
+
+  .fs-24 {
+    font-size: 14px;
+    font-weight: 500px;
+  }
+
+  .fs-17 {
+    font-size: 19px;
+  }
+
+  .fs-22 {
+    font-size: 18px;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .w-80 {
+    width: 100%;
+  }
+
+  .w-90 {
+    width: 100%
+  }
+
+  .fs-40 {
+    font-size: 26px;
+  }
+
+  .fs-33 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .fs-26 {
+    font-size: 14px;
+  }
+
+  .fs-24 {
+    font-size: 14px;
+    font-weight: 500px;
+  }
+
+  .fs-22 {
+    font-size: 16px;
+  }
+
+  .fs-18 {
+    font-size: 16px;
+  }
+
+  .fs-17 {
+    font-size: 14px;
+  }
+
+
+}
+
+:root {
+  --form-gray: #7F7F7F;
+  --light-blue: #2CAAE6;
+  --light-green: #40FF62;
+  --dark-blue: #30354C;
+  --light-gray: #F9F9F9;
+
+  --dark-gray: #E7E7EA;
+  --white-text: #F9FAFC;
+  --black-text: #000018;
+}
+
+.dark-blue-text {
+  color: var(--dark-blue)
+}
+
+.light-green-text {
+  color: #40FF62;
+}
+
+.formgray-text {
+  color: var(--form-gray);
+}
+
+.dark-blue {
+  background-color: var(--dark-blue);
+  color: var(--white-text);
+}
+
+.light-blue {
+  background-color: var(--light-blue);
+  color: var(--white-text);
+}
+
+.dark-gray {
+  background-color: var(--dark-gray);
+  color: var(--black-text);
+}
+
+.light-gray {
+  background-color: var(--light-gray);
+  color: var(--black-text);
+}
+
+.light-green {
+  background-color: var(--light-green);
+  color: var(--black-text);
+}
+
+.light-green-text {
+  color: var(--light-green);
+}
+
+.light-blue-text {
+  color: var(--light-blue);
+}
+
+/* ----------------------------Navbar--------------------------------- */
+
+.navbar {
+  display: block;
+}
+
+.mobile-navbar {
+  display: none;
+}
+
+@media screen and (max-width: 1060px) {
+  .navbar {
+    display: none;
+  }
+
+  .mobile-navbar {
+    display: block;
+  }
+}
+
+/* ----------------------------------- */
+/* ------------sellerform-step1------------- */
+
+.option-card {
+  width: 310px;
+  height: 310px;
+}
+
+.option-card img {
+  width: 167px;
+  height: 167px;
+}
+
+.formgray-bar {
+  background-color: var(--form-gray);
+  height: 11px;
+  border-radius: 3px;
+}
+
+
+.greenarrow {
+  position: absolute;
+  right: -35px;
+  top: -12px;
+  z-index: 2;
+}
+
+.bluearrow {
+  position: absolute;
+  right: -35px;
+  top: -12px;
+}
+
+.bar {
+  width: 25%;
+}
+
+@media screen and (max-width: 1024px) {
+  .option-card {
+    width: 261px;
+    height: 261px;
+  }
+
+  .option-card img {
+    width: 141px;
+    height: 141px;
+  }
+
+  .greenarrow {
+    width: 30px;
+    right: -15px;
+    top: -10px;
+    z-index: 2;
+  }
+
+  .bluearrow {
+    width: 30px;
+    right: -15px;
+    top: -10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .option-card {
+    width: 212px;
+    height: 212px;
+  }
+
+  .option-card img {
+    width: 115px;
+    height: 115px;
+  }
+
+  .greenarrow {
+    width: 25px;
+    right: -15px;
+    top: -8px;
+    z-index: 2;
+  }
+
+  .bluearrow {
+    width: 25px;
+    right: -15px;
+    top: -8px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .option-card {
+    width: 162px;
+    height: 162px;
+  }
+
+  .option-card img {
+    width: 87px;
+    height: 87px;
+  }
+
+  .greenarrow {
+    width: 20px;
+    right: -15px;
+    top: -6px;
+    z-index: 2;
+  }
+
+  .bluearrow {
+    width: 20px;
+    right: -15px;
+    top: -6px;
+  }
+}
+
+
+/* ----------------------------step2------------------------ */
+
+.credit-card-input {
+  border: 1px solid#D9D9D9;
+  outline: none;
+  /* width: 75%; */
+}
+
+.credit-card-input[type="text"]:focus {
+  border: 1px solid var(--light-green) !important;
+}
+
+
+
+.check-box-parent input[type="radio"] {
+  display: none;
+}
+
+.check-box-parent {
+  text-align: center;
+}
+
+.check-box-parent input[type="radio"]~span {
+  position: relative;
+  display: inline-block;
+  padding: 16px 16px 16px 45px;
+  border: 1px solid #D9D9D9;
+  color: #7F7F7F;
+  border-radius: 8px;
+  text-align: start;
+  cursor: pointer;
+  width: 320px;
+}
+
+@media screen and (max-width: 576px) {
+  .check-box-parent input[type="radio"]~span {
+    width: 220px;
+  }
+}
+
+.check-box-parent input[type="radio"]:checked~span {
+  position: relative;
+  display: inline-block;
+  padding: 16px 16px 16px 45px;
+  border: 1px solid #40FF62;
+  color: #000018;
+
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background: #40FF62 !important;
+  border: none !important;
+  position: relative;
+}
+
+.range-slider__wrap .range-slider__tooltip .range-slider__tooltip__label {
+
+  background-color: #2CAAE6 !important;
+}
+
+.range-slider__wrap .range-slider__tooltip.range-slider__tooltip--top .range-slider__tooltip__caret::before {
+  border-top-color: #2CAAE6 !important;
+
+}
+
+
+
+
+.check-box-parent input[type="radio"]~span:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border: 1px solid #D9D9D9;
+  border-radius: 50%;
+  left: 16px;
+  top: 20px;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+
+}
+
+input[type="checkbox"]:checked {
+  width: 15px;
+  height: 15px;
+  accent-color: #40FF62;
+  background-color: #40FF62;
+}
+
+.check-box-parent input[type="radio"]:checked~span:before {
+  background-color: #40FF62;
+  border: 1px solid #40FF62;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------- */
+
+/* ----------------hero----------------------- */
+
+
+.get {
+  flex-shrink: 0;
+  width: 157px;
+  height: 45px
+}
+
+@media screen and (max-width: 576px) {
+  .get {
+    width: 100px;
+    height: 30px;
+  }
+}
+
+.partnering {
+  margin-top: 150px;
+}
+
+/* ----------------------------How-Does-Sell--------------------------------- */
+
+.how-does-sell-card {
+  background-color: white;
+  width: 225px !important;
+}
+
+.how-does-sell-card img {
+  width: 109px;
+  height: 111px;
+
+}
+
+
+.how-does-sell-card h3 {
+  margin-top: 16px;
+  font-family: 'Roboto' !important;
+
+}
+
+.how-does-sell-card p {
+  margin-top: 18px;
+  font-family: 'Roboto' !important;
+}
+
+
+.newsletter {
+  border: none;
+  outline: none;
+}
+
+
+.pointer {
+  cursor: pointer;
+}
+
+/* --------------------------------slider---------------------------------- */
+.nextarrow {
+  position: absolute;
+  top: 45%;
+  right: -55px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.prearrow {
+  position: absolute;
+  top: 45%;
+  left: -55px;
+  cursor: pointer;
+  z-index: 5;
+  transform: rotate(180deg);
+}
+
+.slick-slider {
+  width: 225px !important;
+}
